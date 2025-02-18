@@ -4,8 +4,8 @@ fun main() {
     val abdullah = UserRole.EDITOR
     val ahmed = UserRole.VIEWER
 
-    fun access(userRole: UserRole) {
-        when(userRole) {
+    fun access(user: UserRole) {
+        when(user) {
             UserRole.ADMIN -> println("You're an admin do whatever you want")
             UserRole.EDITOR -> println("You're an editor you have limited privileges ")
             UserRole.VIEWER -> println("You cannot alter anything.")
